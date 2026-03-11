@@ -14,15 +14,15 @@ export const metadata: Metadata = {
   description: 'O visual chama, o som envolve, mas a edição é quem cria o ritmo e a narrativa. Audiovisual é a magia que une o que vemos e ouvimos.',
   icons: {
     icon: [
-      { url: '/favicon/favicon-32x32.png?v=1', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon/favicon-16x16.png?v=1', sizes: '16x16', type: 'image/png' },
-      { url: '/index/LOGO-ICON.svg?v=1', type: 'image/svg+xml' },
-      { url: '/favicon/android-chrome-512x512.png?v=1', sizes: '512x512', type: 'image/png' },
-      { url: '/favicon/android-chrome-192x192.png?v=1', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon/favicon-32x32.png?v=2', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon/favicon-16x16.png?v=2', sizes: '16x16', type: 'image/png' },
+      { url: '/index/LOGO-ICON.svg?v=2', type: 'image/svg+xml' },
+      { url: '/favicon/android-chrome-512x512.png?v=2', sizes: '512x512', type: 'image/png' },
+      { url: '/favicon/android-chrome-192x192.png?v=2', sizes: '192x192', type: 'image/png' },
     ],
-    shortcut: '/favicon/favicon.ico?v=1',
+    shortcut: '/favicon/favicon.ico?v=2',
     apple: [
-      { url: '/favicon/apple-touch-icon.png?v=1', sizes: '180x180', type: 'image/png' },
+      { url: '/favicon/apple-touch-icon.png?v=2', sizes: '180x180', type: 'image/png' },
     ],
   },
   manifest: '/favicon/site.webmanifest',
