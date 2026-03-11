@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <MainLayout>
       <main className="relative">
-          <div className="flex flex-1 flex-col md:flex-row max-w-[1440px] mx-auto w-full px-8 py-24 relative items-center gap-8">
+          <div className="flex flex-1 flex-col md:flex-row max-w-[1440px] mx-auto w-full px-8 py-60 relative items-center gap-8">
             <section className="flex flex-col justify-center max-w-xl text-white relative z-10">
               <p className="text-sm font-semibold mb-5 tracking-wider uppercase text-white">VÍDEO É MAIS QUE IMAGEM</p>
               <h1 className="text-5xl lg:text-7xl font-extrabold mb-4 leading-tight text-primary">EDIÇÃO</h1>
@@ -239,7 +239,7 @@ export default function Home() {
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                   <AlertDialogCancel>Cancelar</AlertDialogCancel>
-                  <AlertDialogAction onClick={() => window.open('https://projetex.netlify.app/', '_blank')}>
+                  <AlertDialogAction onClick={() => window.open('fasthub-io.netlify.app/', '_blank')}>
                     Continuar
                   </AlertDialogAction>
                 </AlertDialogFooter>
@@ -265,7 +265,12 @@ export default function Home() {
               Quando <span className="text-primary">cada momento merece um bom take</span>, não dá pra deixar sua ideia no banco de reservas. Vamos colocar seu projeto no palco principal, com direito a aplausos!
             </p>
             <div className="flex justify-center items-center gap-4 mt-8">
-              <Link href="/contato" passHref>
+              <Link 
+                href="https://wa.me/553172208560?text=Olá, equipe da FastFilms! Vim pelo site de vocês e gostaria de solicitar um orçamento para o meu projeto." 
+                target="_blank"
+                rel="noopener noreferrer"
+                passHref
+              >
                 <div className="contact-button">
                   <div className="blob1"></div>
                   <div className="blob2"></div>
