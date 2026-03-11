@@ -1,0 +1,102 @@
+/*
+  Copyright - 2025 Spacious74 (VishalS) 
+  Copyright - 2025 imtausef (Muhammad Tauseef) 
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+.contact-button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  border-radius: 16px;
+  border: none;
+  padding: 2px;
+  background: radial-gradient(circle 80px at 80% -10%, hsl(var(--foreground)), hsl(var(--background)));
+  position: relative;
+  transition:
+    background 0.3s,
+    transform 0.3s;
+}
+
+.contact-button:hover {
+  transform: scale(0.98);
+}
+
+.contact-button::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 60%;
+  border-radius: 120px;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 20px hsla(var(--foreground), 0.22);
+  z-index: -1;
+  transition: box-shadow 0.3s;
+}
+
+.contact-button:hover::after {
+  box-shadow: 0 0 10px hsla(var(--foreground), 0.1);
+}
+
+.blob1 {
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  border-radius: 16px;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(
+    circle 60px at 0% 100%,
+    hsl(var(--primary)),
+    hsla(var(--primary), 0.5),
+    transparent
+  );
+  box-shadow: -10px 10px 30px hsla(var(--primary), 0.18);
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
+}
+
+.contact-button:hover .blob1 {
+  box-shadow: -5px 5px 20px #000;
+}
+
+.inner {
+  padding: 14px 25px;
+  border-radius: 14px;
+  color: hsl(var(--foreground));
+  z-index: 3;
+  position: relative;
+  background: radial-gradient(circle 80px at 80% -50%, hsl(var(--secondary)), hsl(var(--background)));
+  transition: background 0.3s;
+}
+
+.contact-button:hover .inner {
+  background: radial-gradient(circle 80px at 80% -50%, hsl(var(--muted)), hsl(var(--background)));
+}
+
+.inner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 14px;
+  background: radial-gradient(
+    circle 60px at 0% 100%,
+    hsla(var(--primary), 0.1),
+    hsla(var(--primary), 0.07),
+    transparent
+  );
+  position: absolute;
+  transition: opacity 0.3s;
+}
+
+.contact-button:hover .inner::before {
+  opacity: 0;
+}

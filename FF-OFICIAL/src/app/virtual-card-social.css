@@ -1,0 +1,38 @@
+/* From Uiverse.io by McHaXYT */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-button {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0a0a0a;
+  border: 2px solid hsl(var(--border));
+  transition: all 0.45s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button:hover {
+  transform: rotate(360deg);
+  transform-origin: center center;
+  background-color: #ffff;
+  border-color: hsl(var(--primary));
+}
+
+.social-button .btn-svg {
+  color: hsl(var(--foreground));
+}
+
+
+.social-button:hover .btn-svg {
+  color: hsl(var(--primary));
+}
