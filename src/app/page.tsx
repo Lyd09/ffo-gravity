@@ -266,7 +266,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center items-center gap-4 mt-8">
               <Link 
-                href="https://wa.me/553172208560?text=Olá, equipe da FastFilms! Vim pelo site de vocês e gostaria de solicitar um orçamento para o meu projeto." 
+                href="https://wa.me/5531972208560?text=Olá, equipe da FastFilms! Vim pelo site de vocês e gostaria de solicitar um orçamento para o meu projeto." 
                 target="_blank"
                 rel="noopener noreferrer"
                 passHref

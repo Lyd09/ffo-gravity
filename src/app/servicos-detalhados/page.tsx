@@ -167,9 +167,9 @@ export default function ServicosDetalhadosPage() {
               Você já viu o porquê, agora veja o como. Nossa equipe está pronta para transformar sua visão em um projeto audiovisual de impacto, com acompanhamento em tempo real.
             </p>
             <div className="flex justify-center items-center gap-4 mt-8">
-              <Link href="/contato" passHref>
+              <a href="https://wa.me/5531972208560?text=Olá, equipe da FastFilms! Vim pelo site de vocês e gostaria de solicitar um orçamento para o meu projeto." target="_blank" rel="noopener noreferrer">
                 <SparkleButton>Iniciar Orçamento Inteligente</SparkleButton>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
